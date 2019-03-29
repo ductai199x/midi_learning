@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <title>midi_learning</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        <link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+    </head>
+    <body>
+        <h1 id="midilearning">midi_learning</h1>
+<p>This project aims at learning how to do digital signal processing with sound waves. Since MIDI is discrete in frequencies (notes are ranged from 0-127), it is easier to do simulation and to verify results</p>
+<p>The ultimate goal is to be able to take a melody + a bunch of spoken words and produce a song with such melody and such words as lyrics</p>
+<p>Just imagine singing any song with any lyrics!! <!--:stuck_out_tongue_winking_eye:--></p>
+<h1 id="learning-goals">learning goals</h1>
+<ol>
+<li>Understand how MIDI works</li>
+<li>Be able to get a frequency vs time graph from a provided midi/wav file</li>
+<li>Be able to produce an fft of an input sound wave</li>
+<li>Extract spoken syllables from a sound file</li>
+<li>Assume 1 midi note corresponds to 1 syllable, do signal processing on that syllable so that it has the tone and the pitch of the midi note</li>
+<li>Use crossfading techniques to smooth out the transition between processed syllables</li>
+<li>String the syllables together, do some more signal processing so that the tempo of the syllables matches the tempo of the input midi song</li>
+<li>Add the syllables to the input song</li>
+<li>Output the finished product</li>
+<li>Do testing to verify the performance of the implemented algorithms</li>
+</ol>
+<h1 id="learning-resources">learning resources</h1>
+<ul>
+<li><a href="https://mido.readthedocs.io/en/latest/lib.html">https://mido.readthedocs.io/en/latest/lib.html</a></li>
+<li><a href="https://pages.mtu.edu/~suits/NoteFreqCalcs.html">https://pages.mtu.edu/~suits/NoteFreqCalcs.html</a></li>
+<li><a href="https://www.cs.cmu.edu/~music/cmsip/readings/MIDI">https://www.cs.cmu.edu/~music/cmsip/readings/MIDI</a> tutorial for programmers.html</li>
+<li><a href="http://web.mit.edu/music21/doc/usersGuide/index.html">http://web.mit.edu/music21/doc/usersGuide/index.html</a></li>
+<li><a href="https://docs.scipy.org/doc/scipy/reference/tutorial/fftpack.html">https://docs.scipy.org/doc/scipy/reference/tutorial/fftpack.html</a></li>
+<li><a href="https://stackoverflow.com/questions/19727261/how-to-count-the-number-of-spoken-syllables-in-an-audio-file">https://stackoverflow.com/questions/19727261/how-to-count-the-number-of-spoken-syllables-in-an-audio-file</a></li>
+<li><a href="http://www.fon.hum.uva.nl/praat/">http://www.fon.hum.uva.nl/praat/</a></li>
+</ul>
+<h1 id="learning-milestones-date---task">learning milestones (date - task - % )</h1>
+<ul>
+<li>03/25/19 - Understanding MIDI - 50%</li>
+<li>03/26/19 - Understanding MIDI - 100%</li>
+<li>03/27/19 - Producing a freq vs time graph of midi file - 40%</li>
+<li>03/28/19 - Got the freq vs time graph + its fft - 100%</li>
+<li>03/29/19 - Researching how to get syllables from sound file - 30%</li>
+</ul>
+
+    </body>
+    </html>
